@@ -149,3 +149,96 @@ ValueOf()	    Returns a number as a number*/
 
 //valueOf method
 //The valueOf() method is used internally in JavaScript to convert Number objects to primitive values.
+{
+    let x = 123;
+    console.log(x.valueOf());
+    console.log((123).valueOf());
+    console.log((100 + 23).valueOf());
+}
+
+// ------------------------------------------------------------------------------------
+/*Converting Variables to Numbers
+There are 3 JavaScript methods that can be used to convert a variable to a number:
+
+Method	        Description
+Number()	    Returns a number converted from its argument.
+parseFloat()	Parses its argument and returns a floating point number
+parseInt()	    Parses its argument and returns a whole number
+
+The methods above are not number methods. They are global JavaScript methods.
+*/
+
+//Number(variable)
+{
+    console.log(Number(true));
+    console.log(Number(false));
+    console.log(Number("10"));
+    console.log(Number("  10"));
+    console.log(Number("10  "));
+    console.log(Number(" 10  "));
+    console.log(Number("10.33"));
+    console.log(Number("10,33"));
+    console.log(Number("10 33"));
+    console.log(Number("John"));
+    console.log(typeof (Number('   10   ')))
+}
+
+//parseInt() 
+{
+    console.log(parseInt("-10"));
+    console.log(parseInt("-10.33"));
+    console.log(parseInt("10"));
+    console.log(parseInt("10.33"));
+    console.log(parseInt("10 20 30"));
+    console.log(parseInt("10 years"));
+    console.log(parseInt("years 10"));
+}
+
+//parseFloat()
+{
+    console.log(parseFloat("10"));
+    console.log(parseFloat("10.33"));
+    console.log(parseFloat("10 20 30"));
+    console.log(parseFloat("10 years"));
+    console.log(parseFloat("years 10"));
+}
+// --------------------------------------------------
+//Number Object Methods
+/**
+
+Number.isInteger()	    Returns true if the argument is an integer
+Number.isSafeInteger()	Returns true if the argument is a safe integer
+Number.parseFloat()	    Converts a string to a number
+Number.parseInt()	    Converts a string to a whole number
+
+ */
+/*
+The Number methods Number.parseInt() and Number.parseFloat()
+
+are the same as the
+
+Global methods parseInt() and parseFloat().
+
+The purpose is modularization of globals (to make it easier to use the same JavaScript code outside the browser).
+*/
+
+// Number.parseFloat method 
+{
+    console.log(Number.parseFloat("10"));
+    console.log(Number.parseFloat("10.33"));
+    console.log(Number.parseFloat("10 20 30"));
+    console.log(Number.parseFloat("10 years"));
+    console.log(Number.parseFloat("years 10"));
+}
+
+//Number.parseInt method
+
+{
+    console.log(Number.parseInt("-10"));
+    console.log(Number.parseInt("-10.33"));
+    console.log(Number.parseInt("10"));
+    console.log(Number.parseInt("10.33"));
+    console.log(Number.parseInt("10 20 30"));
+    console.log(Number.parseInt("10 years"));
+    console.log(Number.parseInt("years 10"));
+}
