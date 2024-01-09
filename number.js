@@ -242,3 +242,8 @@ The purpose is modularization of globals (to make it easier to use the same Java
     console.log(Number.parseInt("10 years"));
     console.log(Number.parseInt("years 10"));
 }
+
+
+// --------------------------------------------------------------------------------
+//Number properties
+
